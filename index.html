@@ -242,10 +242,8 @@ HTML
   </footer>
 
   <!-- XỬ LÝ LOGIC & KẾT NỐI GOOGLE SHEETS -->
-  <script>
-    // DÁN ĐƯỜNG LINK GOOGLE APPS SCRIPT CỦA BẠN VÀO GIỮA HAI DẤU NGOẶC KÉP BÊN DƯỚI:
-   const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbytmuzDRISL5IjK3GZIYizVj8u72L4JVy2_WWcpx2AgcHJTDoiDgbB2BJMAqJuTGkik/exec';
-
+ <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz3gpvqnsJCXJrF46rWhtJc95BMtMhL8iCR-odmTL2LY9bIgq3FydxypK8AS3861LL4/exec";
     function escapeHTML(str) {
       const div = document.createElement('div');
       div.textContent = str || "";
@@ -259,7 +257,7 @@ HTML
     const chatForm = document.getElementById('chatForm');
 
     async function loadDataFromSheet() {
-      if (!SCRIPT_URL || SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbytmuzDRISL5IjK3GZIYizVj8u72L4JVy2_WWcpx2AgcHJTDoiDgbB2BJMAqJuTGkik/exec;")) return;
+      if (!SCRIPT_URL || SCRIPT_URL.includes("DAN_LINK")) return;
       try {
         const res = await fetch(SCRIPT_URL);
         const data = await res.json();
@@ -269,14 +267,7 @@ HTML
             if (!row || !row[1]) return;
             const card = document.createElement('div');
             card.className = "card-dark rounded-xl p-5 flex items-start gap-4 border-red-900/60";
-            card.innerHTML = `
-              <img src="logo-clup.jpg" alt="Võ sĩ" class="w-16 h-16 rounded-lg object-cover border border-red-600 shrink-0">
-              <div>
-                <h3 class="font-bold text-white text-base">${escapeHTML(row[1])}</h3>
-                <p class="text-xs text-red-400 font-semibold mt-0.5">${escapeHTML(row[2])} kg • ${escapeHTML(row[3])} cm • ${escapeHTML(row[6])}</p>
-                <p class="text-xs text-zinc-400 mt-2">${escapeHTML(row[5])}</p>
-              </div>
-            `;
+            card.innerHTML = `<img src="logo-clup.jpg" alt="Võ sĩ" class="w-16 h-16 rounded-lg object-cover border border-red-600 shrink-0"><div><h3 class="font-bold text-white text-base">${escapeHTML(row[1])}</h3><p class="text-xs text-red-400 font-semibold mt-0.5">${escapeHTML(row[2])} kg • ${escapeHTML(row[3])} cm • ${escapeHTML(row[6])}</p><p class="text-xs text-zinc-400 mt-2">${escapeHTML(row[5])}</p></div>`;
             fighterList.appendChild(card);
           });
         }
@@ -286,8 +277,7 @@ HTML
             if (!row || !row[1] || !row[2]) return;
             const msgDiv = document.createElement('div');
             msgDiv.className = "bg-black/70 border border-zinc-800 rounded-lg p-3";
-            msgDiv.innerHTML = `<span class="text-xs font-bold text-red-400">${escapeHTML(row[1])}:</span>
-                                <p class="text-sm text-zinc-200 mt-0.5">${escapeHTML(row[2])}</p>`;
+            msgDiv.innerHTML = `<span class="text-xs font-bold text-red-400">${escapeHTML(row[1])}:</span><p class="text-sm text-zinc-200 mt-0.5">${escapeHTML(row[2])}</p>`;
             chatMessages.appendChild(msgDiv);
           });
           chatMessages.scrollTop = chatMessages.scrollHeight;
@@ -342,8 +332,7 @@ HTML
 
         const msgDiv = document.createElement('div');
         msgDiv.className = "bg-black/70 border border-zinc-800 rounded-lg p-3";
-        msgDiv.innerHTML = `<span class="text-xs font-bold text-red-400">${escapeHTML(sender)}:</span>
-                            <p class="text-sm text-zinc-200 mt-0.5">${escapeHTML(text)}</p>`;
+        msgDiv.innerHTML = `<span class="text-xs font-bold text-red-400">${escapeHTML(sender)}:</span><p class="text-sm text-zinc-200 mt-0.5">${escapeHTML(text)}</p>`;
         chatMessages.appendChild(msgDiv);
         chatMessages.scrollTop = chatMessages.scrollHeight;
         document.getElementById('chatInput').value = "";
