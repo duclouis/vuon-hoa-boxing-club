@@ -1,0 +1,338 @@
+HTML
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vườn Hoa Boxing Clup - Kỷ Luật, Cố Gắng, Chiến Thắng</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #0b0b0c; color: #f3f4f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .blood-border { border-color: #dc2626; }
+    .blood-bg { background-color: #dc2626; }
+    .blood-text { color: #ef4444; }
+    .card-dark { background-color: #141417; border: 1px solid #27272a; }
+    .hero-overlay { background: linear-gradient(to bottom, rgba(11,11,12,0.65), rgba(11,11,12,0.95)); }
+  </style>
+</head>
+<body class="antialiased selection:bg-red-600 selection:text-white">
+
+  <!-- THANH ĐIỀU HƯỚNG -->
+  <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-red-900/50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="logo-clup.jpg" alt="Logo Vườn Hoa Boxing Clup" class="w-11 h-11 rounded-full object-cover border-2 border-red-600">
+        <div>
+          <span class="font-black text-lg tracking-wider uppercase text-white block leading-none">Vườn Hoa</span>
+          <span class="font-bold text-xs tracking-widest uppercase text-red-500">Boxing Clup</span>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm font-semibold uppercase tracking-wider">
+        <a href="#lich-sinh-hoat" class="hover:text-red-500 transition">Lịch Tối Thứ 7</a>
+        <a href="#dang-ky" class="hover:text-red-500 transition">Đăng Ký Sparring</a>
+        <a href="#danh-sach" class="hover:text-red-500 transition">Võ Sĩ Tham Gia</a>
+        <a href="#chat-cong-dong" class="hover:text-red-500 transition">Phòng Chat</a>
+        <a href="#ung-ho" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-bold transition">Ủng Hộ Quỹ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER CHÍNH -->
+  <header class="relative py-16 md:py-24 border-b border-zinc-800 overflow-hidden">
+    <img src="logo-clup.jpg" alt="Banner" class="absolute inset-0 w-full h-full object-cover opacity-25 blur-[2px]">
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="relative max-w-5xl mx-auto px-4 text-center">
+      <span class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest uppercase bg-red-950/80 text-red-400 border border-red-700 rounded-full">
+        Cộng Đồng Lành Mạnh • Nâng Cao Sức Khỏe • Giải Trí Cuối Tuần
+      </span>
+      <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight text-white mb-4">
+        Vườn Hoa <span class="text-red-600">Boxing Clup</span>
+      </h1>
+      <p class="text-lg md:text-xl font-bold text-zinc-300 tracking-wide uppercase mb-8">
+        "Kỷ Luật – Cố Gắng – Chiến Thắng | Đoàn Kết – Vững Mạnh – Phát Triển"
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#dang-ky" class="bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-wider px-8 py-4 rounded-lg shadow-lg shadow-red-900/40 transition">
+          Đăng Ký Sparring Ngay
+        </a>
+        <a href="#ung-ho" class="bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 font-bold uppercase tracking-wider px-8 py-4 rounded-lg transition">
+          Quỹ Bảo Dưỡng Găng & Mũ
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- LỊCH SINH HOẠT & FOUNDER -->
+  <section id="lich-sinh-hoat" class="max-w-6xl mx-auto px-4 py-14">
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Lịch Tối Thứ 7 -->
+      <div class="md:col-span-2 card-dark rounded-xl p-6 md:p-8 border-l-4 border-l-red-600">
+        <h2 class="text-2xl font-black uppercase text-white mb-2">Lịch Sparring Tối Thứ 7 Hàng Tuần</h2>
+        <p class="text-zinc-400 text-sm mb-6">Sân chơi giao lưu kỹ thuật, rèn luyện thể lực cuối tuần. CLB chuẩn bị sẵn <strong>găng boxing và mũ bảo hộ</strong> cho anh em tham gia.</p>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-black/60 p-4 rounded-lg border border-zinc-800">
+            <span class="text-red-500 font-black text-xl block">21:00 – 21:30</span>
+            <span class="font-bold text-white text-sm uppercase mt-1 block">Tập Trung & Khởi Động</span>
+            <p class="text-xs text-zinc-400 mt-1">Điểm danh, quấn băng đa, đeo găng & mũ bảo hộ, làm nóng cơ khớp.</p>
+          </div>
+          <div class="bg-black/60 p-4 rounded-lg border border-red-900/60">
+            <span class="text-red-500 font-black text-xl block">21:30 – 22:00</span>
+            <span class="font-bold text-white text-sm uppercase mt-1 block">Ghép Cặp Hạng Cân</span>
+            <p class="text-xs text-zinc-400 mt-1">Phổ biến luật an toàn, ghép kèo tương đồng chiều cao & cân nặng.</p>
+          </div>
+          <div class="bg-black/60 p-4 rounded-lg border border-zinc-800">
+            <span class="text-red-500 font-black text-xl block">22:00 – 23:00</span>
+            <span class="font-bold text-white text-sm uppercase mt-1 block">Sparring Chính Thức</span>
+            <p class="text-xs text-zinc-400 mt-1">Giao lưu theo hiệp, giữ tinh thần thượng võ, tôn trọng đồng đội.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thông tin Founder / Slogan -->
+      <div class="card-dark rounded-xl p-6 flex flex-col items-center text-center justify-center">
+        <img src="avata.jpg" alt="Đức Louis" class="w-24 h-24 rounded-full object-cover border-2 border-red-600 mb-3 shadow-lg">
+        <span class="text-xs uppercase tracking-widest text-red-500 font-bold">Leader / Điều Phối CLB</span>
+        <h3 class="text-xl font-black text-white uppercase mt-1">Đức Louis</h3>
+        <p class="text-xs text-zinc-400 mt-2 leading-relaxed">
+          "Không phân biệt người mới hay tập lâu, chỉ cần bạn nghiêm túc và tôn trọng luật chơi an toàn, Vườn Hoa Boxing Clup luôn chào đón."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM ĐĂNG KÝ SPARRING & PREVIEW ẢNH -->
+  <section id="dang-ky" class="max-w-6xl mx-auto px-4 py-10">
+    <div class="grid lg:grid-cols-5 gap-8">
+      <!-- Form nhập liệu -->
+      <div class="lg:col-span-3 card-dark rounded-xl p-6 md:p-8">
+        <h2 class="text-2xl font-black uppercase text-white mb-1">Đăng Ký Tham Gia Sparring</h2>
+        <p class="text-sm text-zinc-400 mb-6">Điền thông tin bên dưới để Ban tổ chức sắp xếp cặp đấu và chuẩn bị găng, mũ bảo hộ phù hợp.</p>
+
+        <form id="fighterForm" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-zinc-300 mb-1">Họ Tên / Biệt Danh *</label>
+              <input type="text" id="fighterName" required placeholder="VD: Nguyễn Văn A" class="w-full bg-black border border-zinc-700 rounded-lg px-4 py-2.5 text-white focus:border-red-600 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-zinc-300 mb-1">Số Điện Thoại / Zalo *</label>
+              <input type="text" id="fighterContact" required placeholder="VD: 0987xxxxxx" class="w-full bg-black border border-zinc-700 rounded-lg px-4 py-2.5 text-white focus:border-red-600 focus:outline-none">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-zinc-300 mb-1">Hạng Cân (kg) *</label>
+              <input type="number" id="fighterWeight" required min="35" max="150" placeholder="VD: 68" class="w-full bg-black border border-zinc-700 rounded-lg px-4 py-2.5 text-white focus:border-red-600 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-zinc-300 mb-1">Chiều Cao (cm) *</label>
+              <input type="number" id="fighterHeight" required min="130" max="220" placeholder="VD: 165" class="w-full bg-black border border-zinc-700 rounded-lg px-4 py-2.5 text-white focus:border-red-600 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-zinc-300 mb-1">Trình Độ *</label>
+              <select id="fighterLevel" class="w-full bg-black border border-zinc-700 rounded-lg px-3 py-2.5 text-white focus:border-red-600 focus:outline-none">
+                <option value="Người mới (Tập nhẹ)">Người mới (Tập nhẹ)</option>
+                <option value="Cơ bản (3-6 tháng)">Cơ bản (3-6 tháng)</option>
+                <option value="Khá (Trên 6 tháng)">Khá (Trên 6 tháng)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-zinc-300 mb-1">Ảnh Đại Diện Võ Sĩ (Tùy chọn)</label>
+            <input type="file" id="fighterPhoto" accept="image/png, image/jpeg, image/webp" class="w-full bg-black border border-zinc-700 rounded-lg px-3 py-2 text-sm text-zinc-400 file:mr-4 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-bold file:bg-red-600 file:text-white hover:file:bg-red-700">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-zinc-300 mb-1">Giới Thiệu Bản Thân & Ghi Chú</label>
+            <textarea id="fighterBio" rows="3" placeholder="VD: Mình muốn đánh nhẹ giao lưu kỹ thuật, cần mượn găng 10oz và mũ bảo hộ..." class="w-full bg-black border border-zinc-700 rounded-lg px-4 py-2.5 text-white focus:border-red-600 focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" id="submitBtn" class="w-full bg-red-600 hover:bg-red-700 text-white font-black uppercase tracking-wider py-3.5 rounded-lg transition shadow-lg shadow-red-900/30">
+            Gửi Đăng Ký Sparring Tối Thứ 7
+          </button>
+        </form>
+      </div>
+
+      <!-- Poster Slogan CLB -->
+      <div class="lg:col-span-2 card-dark rounded-xl p-4 flex flex-col justify-between">
+        <img src="slogan-clup.jpg" alt="Slogan Vườn Hoa Boxing Clup" class="w-full h-auto rounded-lg object-cover border border-zinc-800">
+        <div class="mt-4 bg-black/70 p-4 rounded-lg border border-zinc-800 text-xs text-zinc-300 space-y-1.5">
+          <p class="font-bold text-red-500 uppercase">Lưu ý an toàn khi lên đài:</p>
+          <p>• Bắt buộc quấn băng đa bảo vệ cổ tay và đeo bảo hộ răng (nếu có).</p>
+          <p>• Đánh kiểm soát lực, tuyệt đối không cay cú ăn thua.</p>
+          <p>• Tuân thủ hiệu lệnh dừng hiệp của người điều phối.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DANH SÁCH VÕ SĨ ĐÃ ĐĂNG KÝ TRÊN TRANG -->
+  <section id="danh-sach" class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-black uppercase text-white mb-6">Bảng Võ Sĩ Đăng Ký Tuần Này</h2>
+    <div id="fighterList" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Thẻ võ sĩ mẫu -->
+      <div class="card-dark rounded-xl p-5 flex items-start gap-4">
+        <img src="avata.jpg" alt="Võ sĩ" class="w-16 h-16 rounded-lg object-cover border border-red-600 shrink-0">
+        <div>
+          <h3 class="font-bold text-white text-base">Đức Louis <span class="text-xs bg-red-600/20 text-red-400 px-2 py-0.5 rounded ml-1">Host</span></h3>
+          <p class="text-xs text-red-400 font-semibold mt-0.5">68 kg • 1m58 • Giao lưu kỹ thuật</p>
+          <p class="text-xs text-zinc-400 mt-2">Sẵn sàng tiếp đón anh em mọi hạng cân tối Thứ 7 tuần này!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHÒNG CHAT CỘNG ĐỒNG & MÃ QR ỦNG HỘ -->
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Khung Chat Cộng Đồng -->
+      <div id="chat-cong-dong" class="card-dark rounded-xl p-6 flex flex-col h-[460px]">
+        <div class="border-b border-zinc-800 pb-3 mb-4 flex items-center justify-between">
+          <div>
+            <h2 class="text-xl font-black uppercase text-white">Phòng Chat Anh Em CLB</h2>
+            <p class="text-xs text-zinc-400">Hẹn kèo, hỏi giờ tập hoặc trao đổi kỹ thuật</p>
+          </div>
+          <span class="flex items-center gap-1.5 text-xs text-emerald-400 font-semibold">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Đang mở
+          </span>
+        </div>
+
+        <div id="chatMessages" class="flex-1 overflow-y-auto space-y-3 pr-2 mb-4">
+          <div class="bg-black/70 border border-zinc-800 rounded-lg p-3">
+            <span class="text-xs font-bold text-red-500">Đức Louis (Admin):</span>
+            <p class="text-sm text-zinc-200 mt-0.5">Chào mừng anh em đến với Vườn Hoa Boxing Clup! Tối Thứ 7 này 21h tập trung khởi động nhé.</p>
+          </div>
+        </div>
+
+        <form id="chatForm" class="flex gap-2">
+          <input type="text" id="chatSender" placeholder="Tên bạn" required class="w-28 bg-black border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white focus:border-red-600 focus:outline-none">
+          <input type="text" id="chatInput" placeholder="Nhập tin nhắn..." required maxlength="200" class="flex-1 bg-black border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white focus:border-red-600 focus:outline-none">
+          <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-lg text-sm transition">Gửi</button>
+        </form>
+      </div>
+
+      <!-- Mục Ủng Hộ Mã QR -->
+      <div id="ung-ho" class="card-dark rounded-xl p-6 md:p-8 border-t-4 border-t-red-600 flex flex-col sm:flex-row items-center gap-6">
+        <div class="w-48 h-48 bg-white p-2 rounded-xl shrink-0 shadow-lg">
+          <img src="qr-ung-ho.jpg" alt="Mã QR Ủng Hộ CLB" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-red-500">Chung Tay Xây Dựng CLB</span>
+          <h2 class="text-2xl font-black uppercase text-white mt-1 mb-2">Ủng Hộ Quỹ Thiết Bị</h2>
+          <p class="text-sm text-zinc-300 leading-relaxed mb-3">
+            CLB hoạt động phi lợi nhuận nhằm tạo sân chơi lành mạnh cuối tuần. Mọi đóng góp tùy tâm của anh em đều dùng để:
+          </p>
+          <ul class="text-xs text-zinc-400 space-y-1.5 mb-4">
+            <li>• Vệ sinh, khử khuẩn và bảo dưỡng găng, mũ bảo hộ định kỳ.</li>
+            <li>• Thay mới găng tập bị rách/xẹp mút để đảm bảo an toàn.</li>
+            <li>• Sắm thêm đích đấm, dây nhảy và dụng cụ bổ trợ cho anh em.</li>
+          </ul>
+          <p class="text-xs text-zinc-500 italic">* Chỉ chuyển khoản qua mã QR chính thức hiển thị tại trang này.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-800 py-8 mt-10 text-center text-xs text-zinc-500">
+    <p class="font-bold text-zinc-300 uppercase tracking-wider">Vườn Hoa Boxing Clup • Tối Thứ 7 Hàng Tuần (21:00 – 23:00)</p>
+    <p class="mt-1">Sức Khỏe • Cộng Đồng • Thượng Võ</p>
+  </footer>
+
+  <!-- XỬ LÝ LOGIC & KẾT NỐI GOOGLE SHEETS -->
+  <script>
+    // DÁN ĐƯỜNG LINK GOOGLE APPS SCRIPT CỦA BẠN VÀO GIỮA HAI DẤU NGOẶC KÉP BÊN DƯỚI:
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbywnWN2ibjZkrSK2y00Ap1-Z1_PpUcrRT1Vx2k0Q6T6hQjGGPKiY-BLEoM0YXzdct6G/exec";
+
+    // Hàm chống chèn mã độc (XSS) khi hiển thị nội dung người dùng nhập
+    function escapeHTML(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    // Xử lý Form Đăng Ký Sparring
+    const fighterForm = document.getElementById('fighterForm');
+    const fighterList = document.getElementById('fighterList');
+    const submitBtn = document.getElementById('submitBtn');
+
+    fighterForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('fighterName').value.trim();
+      const contact = document.getElementById('fighterContact').value.trim();
+      const weight = document.getElementById('fighterWeight').value.trim();
+      const height = document.getElementById('fighterHeight').value.trim();
+      const level = document.getElementById('fighterLevel').value;
+      const bio = document.getElementById('fighterBio').value.trim() || "Sẵn sàng giao lưu học hỏi!";
+      const photoInput = document.getElementById('fighterPhoto');
+
+      // Hiển thị thẻ võ sĩ lên danh sách trên trang ngay lập tức
+      let imgSrc = "logo-clup.jpg";
+      if (photoInput.files && photoInput.files[0]) {
+        imgSrc = URL.createObjectURL(photoInput.files[0]);
+      }
+
+      const card = document.createElement('div');
+      card.className = "card-dark rounded-xl p-5 flex items-start gap-4 border-red-900/60";
+      card.innerHTML = `
+        <img src="${imgSrc}" alt="Võ sĩ" class="w-16 h-16 rounded-lg object-cover border border-red-600 shrink-0">
+        <div>
+          <h3 class="font-bold text-white text-base">${escapeHTML(name)}</h3>
+          <p class="text-xs text-red-400 font-semibold mt-0.5">${escapeHTML(weight)} kg • ${escapeHTML(height)} cm • ${escapeHTML(level)}</p>
+          <p class="text-xs text-zinc-400 mt-2">${escapeHTML(bio)}</p>
+        </div>
+      `;
+      fighterList.appendChild(card);
+
+      // Gửi dữ liệu về Google Sheets nếu đã gắn link
+      if (SCRIPT_URL && SCRIPT_URL !== "DAN_LINK_WEB_APP_CUA_BAN_VAO_DAY") {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Đang gửi thông tin...";
+
+        fetch(SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, weight, height, contact, bio, level })
+        })
+        .then(() => {
+          alert("Đăng ký thành công! Thông tin đã được lưu vào danh sách CLB.");
+          fighterForm.reset();
+        })
+        .catch(() => {
+          alert("Đã hiển thị trên web nhưng chưa gửi được về bảng tính, hãy kiểm tra lại mạng.");
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Gửi Đăng Ký Sparring Tối Thứ 7";
+        });
+      } else {
+        alert("Đã thêm thẻ võ sĩ lên web! (Bạn hãy gắn link Google Apps Script ở Bước 3 & 4 để lưu SĐT về máy nhé).");
+        fighterForm.reset();
+      }
+    });
+
+    // Xử lý Phòng Chat Cộng Đồng (lưu tạm trên trình duyệt)
+    const chatForm = document.getElementById('chatForm');
+    const chatMessages = document.getElementById('chatMessages');
+
+    chatForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const sender = document.getElementById('chatSender').value.trim();
+      const text = document.getElementById('chatInput').value.trim();
+      if (!sender || !text) return;
+
+      const msgDiv = document.createElement('div');
+      msgDiv.className = "bg-black/70 border border-zinc-800 rounded-lg p-3";
+      msgDiv.innerHTML = `<span class="text-xs font-bold text-red-400">${escapeHTML(sender)}:</span>
+                          <p class="text-sm text-zinc-200 mt-0.5">${escapeHTML(text)}</p>`;
+      chatMessages.appendChild(msgDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      document.getElementById('chatInput').value = "";
+    });
+  </script>
+</body>
+</html>
